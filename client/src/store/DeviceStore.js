@@ -2,23 +2,8 @@ import {makeAutoObservable} from 'mobx';
 
 export default class DeviceStore {
     constructor() {
-        this._types = [
-            {id: 1, name: 'Ноутбуки'},
-            {id: 2, name: 'Мониторы'},
-            {id: 3, name: 'Видеокарты'},
-            {id: 4, name: 'Периферия'}
-        ]
-        this._brands = [
-            {id: 1, name: 'Samsung'},
-            {id: 2, name: 'Intel'},
-            {id: 3, name: 'AMD'},
-            {id: 4, name: 'Apacer'},
-            {id: 5, name: 'A-Data'},
-            {id: 6, name: 'Smartbuy'},
-            {id: 7, name: 'Toshiba'},
-            {id: 8, name: 'Seagate'},
-            {id: 9, name: 'GYGABYTE'}
-        ]
+        this._types = []
+        this._brands = []
         this._devices = [
             {id: 1, name: "SATA 860 Pro", price: 17000, rating: 5, img: `https://www.purposechurch.com/wp-content/uploads/2017/10/fpo400x300.png`},
             {id: 2, name: "AMD Radeon R5 Series 1028", price: 6000, rating: 5, img: `https://www.purposechurch.com/wp-content/uploads/2017/10/fpo400x300.png`},
